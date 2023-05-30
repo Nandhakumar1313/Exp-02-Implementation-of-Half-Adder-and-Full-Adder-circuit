@@ -40,14 +40,14 @@ If the output is 1, then the led glows.
 Developed by:  G.R.Nandhakumar
 RegisterNumber:  212222100029
 
-module ha(x,y,s,c);
-input x,y;
+module halfadder(a,b,s,c);
+input a,b;
 output s,c;
-xor(s,x,y);
-and(c,x,y);
+xor(s,a,b);
+and(c,a,b);
 endmodule
 
-module full_adder(x, y, z, s, c, x1, x2, x3);
+module fulladder(x, y, z, s, c, x1, x2, x3);
 input x,  y,z;
 output s ,c, x1, x2, x3;
 xor(x1, x, y);
@@ -60,11 +60,13 @@ endmodule
 
 ### Output:
 ### RTL
-![ha1](https://user-images.githubusercontent.com/120230694/232973866-792b8423-1090-43aa-938c-9efd21a041bf.png)
-![fa1](https://user-images.githubusercontent.com/120230694/232973913-6ad4c61f-95e9-4a7b-afa1-846ac7cf3c24.png)
+![Screenshot (132)](https://github.com/Nandhakumar1313/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120230694/5d4c1e9d-2a74-4775-bb68-da01be3ff68c)
+
+![Screenshot (134)](https://github.com/Nandhakumar1313/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120230694/3977fc89-361c-4dae-9939-99294b8f90a5)
 
 ### TIMING DIAGRAM
-![ha2](https://user-images.githubusercontent.com/120230694/232974261-770359d5-f82a-4e1d-8fa0-bd499a79eb12.png)
+![Screenshot (133)](https://github.com/Nandhakumar1313/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/120230694/37c66220-2cdd-4bba-b6b8-c0d7bcb57630)
+
 ![fa2](https://user-images.githubusercontent.com/120230694/232974277-8ef8c5d2-e1ec-4d1b-ab83-a85774291c6c.png)
 
 
